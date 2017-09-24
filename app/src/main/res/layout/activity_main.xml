@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nevermore.xindicator.MainActivity">
+
+    <com.nevermore.xindicator.widget.LineIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="太阴"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="太阳"
+            android:gravity="center"
+            android:layout_height="match_parent" />
+
+    </com.nevermore.xindicator.widget.LineIndicator>
+    <com.nevermore.xindicator.widget.TriangleIndicator
+        android:id="@+id/triangleIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </com.nevermore.xindicator.widget.TriangleIndicator>
+    <View
+        android:layout_width="match_parent"
+        android:background="#999999"
+        android:layout_height="1dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+
+</LinearLayout>
